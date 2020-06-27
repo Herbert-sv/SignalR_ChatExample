@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "Private Group";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to @ViewBag.Test</h1>
+</div>
+<br />
+<br />
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-4">
+            <input type="text" id="username" class="form-control" value="@ViewBag.username" readonly />
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-4">
+            <input type="text" id="message" class="form-control" placeholder="My Message" />
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-4">
+            <button class="btn btn-success" id="buttonsend">Send</button>
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <div class="row" style="width:400px;height:300px;background-color:aliceblue;color:black">
+        <div class="col-md-6" style="text-decoration-style:none !important;">
+            <ul id="messageList"></ul>
+        </div>
+    </div>
+</div>
+
+<div class="text-primary d-flex flex-row-reverse" id="displaycount">Users connected 2 </div>
+<script src="~/lib/jS/signalr/dist/browser/signalr.js"></script>
+<script src="~/lib/jS/chatSettings.js"></script>
+
+<script>
+    $(Document).ready(function()
+        {
+            $("#buttonsend").focus();
+
+        });
+</script>

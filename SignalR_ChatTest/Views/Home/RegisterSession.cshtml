@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewData["Title"] = "Register Session";
+}
+
+<style>
+    .Container-flex {
+        display: flex;
+        flex-direction:row;
+        justify-content:center;
+    } 
+</style>
+<div class="text-center">
+    <h2 class="display-4">Register to Experience chat box</h2>
+</div>
+<br/> 
+<br/>
+<div class="Container-flex">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="text-center" style="background-color:cornflowerblue;
+             color:white;font-size:16px;position:relative;width:450px;height:60px">Register Your Information</div>
+            <div style="background-color:aliceblue;
+                        position:relative; width:450px;height:200px">
+                <form asp-controller="Home" asp-action="Register" method="post">
+                    <div class="form-group">
+                        <input placeholder="Type your name" name="UserName" id="userId" class="form-control" required autofocus />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="Password" id="userPass" class="form-control" placeholder="Type Your Password" required />
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+                <div><em> " SignalR Chat Box..."</em></div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+
+    //const user = document.getElementById('userId').value;
+    //const pass = document.getElementById('userPass').value;
+
+
+
+    //    if (user == 'myname' && pass == 123456) {
+
+    //        document.getElementById('userInput').addEventListener('click',
+    //        window.open('ttps://localhost:44353/Home/Index', '_blank', width = 300, height = 600, top = 0, screenLeft = 0));
+
+
+    //    }
+
+    
+
+
+
+
+
+</script>
+
+
