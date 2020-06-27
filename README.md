@@ -1,2 +1,2 @@
 # SignalR_ChatExample 
-using netcore3.1 Csharp mvc javascript 
+A communication in real time using signalr
