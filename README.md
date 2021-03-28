@@ -1,2 +1,9 @@
 # SignalR_ChatExample 
-A communication in real time using signalr
+#dotnet 
+#dotnetcore
+#siganlR 
+#Csharp 
+#windowsdockerimages
+#windowswlsdistribution 
+--image docker @ herbertochoa/signalrchat-netcore-example
+<--! A sample communication in real time using signalr-->
